@@ -6,8 +6,8 @@ void tail(int n)
 {
     if (n > 0)
     {
-        tail(n - 1);
         printf("%d ", n);
+        tail(n - 1);
     }
 }
 
