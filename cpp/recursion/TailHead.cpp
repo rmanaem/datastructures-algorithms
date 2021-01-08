@@ -1,5 +1,5 @@
 /* C++ program to illustrate
-tail and head recursions
+tail and head recursion
 */
 #include <iostream>
 
@@ -23,7 +23,7 @@ void head(int n)
 
 /* Add a breakpoint and debug
 to see how tail and head
-recursions work*/
+recursion work*/
 int main()
 {
     int x = 7;
