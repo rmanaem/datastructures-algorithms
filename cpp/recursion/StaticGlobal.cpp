@@ -1,7 +1,6 @@
 /* C++ program to illustrate
 static and global variables
-in recursion
-*/
+in recursion */
 #include <iostream>
 
 int static_var(int n)
@@ -29,7 +28,7 @@ int global_var(int n)
 
 /* Add a breakpoint and debug
 to see how static and global
-variables work in recursion*/
+variables work in recursion */
 int main()
 {
     int i = 7;

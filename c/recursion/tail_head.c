@@ -1,6 +1,5 @@
 /* C program to illustrate
-tail and head recursion
-*/
+tail and head recursion */
 #include <stdio.h>
 
 void tail(int n)
@@ -23,7 +22,7 @@ void head(int n)
 
 /* Add a breakpoint and debug
 to see how tail and head
-recursion work*/
+recursion work */
 int main()
 {
     int x = 7;
