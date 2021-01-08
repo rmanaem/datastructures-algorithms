@@ -6,7 +6,7 @@ void tail(int n)
 {
     if (n > 0)
     {
-        std::cout << " " << n;
+        std::cout << n << " ";
         tail(n - 1);
     }
 }
@@ -16,7 +16,7 @@ void head(int n)
     if (n > 0)
     {
         head(n - 1);
-        std::cout << " " << n;
+        std::cout << n << " ";
     }
 }
 
