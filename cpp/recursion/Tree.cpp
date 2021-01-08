@@ -4,9 +4,12 @@ tree recursion */
 
 void tree(int n)
 {
-    std::cout << " " << n;
-    tree(n - 1);
-    tree(n - 1);
+    if (n > 0)
+    {
+        std::cout << n << " ";
+        tree(n - 1);
+        tree(n - 1);
+    }
 }
 
 /* Add a breakpoint and debug
