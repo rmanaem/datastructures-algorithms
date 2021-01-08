@@ -1,3 +1,6 @@
+/* C++ program to illustrate
+tail and head recursions
+*/
 #include <iostream>
 
 void tail(int n)
