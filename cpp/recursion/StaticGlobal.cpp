@@ -33,8 +33,11 @@ variables work in recursion*/
 int main()
 {
     int i = 7;
+
     std::cout << static_var(i) << std::endl;
     std::cout << static_var(i) << std::endl;
     std::cout << global_var(i) << std::endl;
     std::cout << global_var(i) << std::endl;
+
+    return 0;
 }

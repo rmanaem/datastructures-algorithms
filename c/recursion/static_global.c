@@ -33,8 +33,11 @@ variables work in recursion*/
 int main()
 {
     int i = 7;
+
     printf("%d\n", static_var(i));
     printf("%d\n", static_var(i));
     printf("%d\n", global_var(i));
     printf("%d\n", global_var(i));
+
+    return 0;
 }
