@@ -1,6 +1,7 @@
-/* C++ program to compute
-sum of natural numbers 
-using recursion and iteration */
+/* C++ program to illustrate 
+differences between recursion
+and iteration using sum of 
+natural numbers */
 #include <iostream>
 
 int recursiveSum(int n)
