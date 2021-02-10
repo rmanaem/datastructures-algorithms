@@ -4,17 +4,17 @@ memorization and iteration
 using fibonacci series */
 #include <iostream>
 
-int recursive_fib(int n)
+int recursiveFib(int n)
 {
     if (n <= 1)
     {
         return n;
     }
-    return recursive_fib(n - 2) + recursive_fib(n - 1);
+    return recursiveFib(n - 2) + recursiveFib(n - 1);
 }
 
 int f[10];
-int memorization_fib(int n)
+int memorizationFib(int n)
 {
     if (n <= 1)
     {
@@ -22,17 +22,17 @@ int memorization_fib(int n)
     }
     if (f[n - 2] == 0)
     {
-        f[n - 2] == memorization_fib(n - 2);
+        f[n - 2] == memorizationFib(n - 2);
     }
     if (f[n - 1] == 0)
     {
-        f[n - 1] = memorization_fib(n - 1);
+        f[n - 1] = memorizationFib(n - 1);
     }
     f[n] = f[n - 2] + f[n - 1];
     return f[n];
 }
 
-int iterative_fib(int n)
+int iterativeFib(int n)
 {
     int t0 = 0, t1 = 1, f = 0;
 
@@ -56,9 +56,9 @@ int main()
 {
     int x = 7;
 
-    std::cout << recursive_fib(x) << std::endl;
-    std::cout << memorization_fib(x) << std::endl;
-    std::cout << iterative_fib(x) << std::endl;
+    std::cout << recursiveFib(x) << std::endl;
+    std::cout << memorizationFib(x) << std::endl;
+    std::cout << iterativeFib(x) << std::endl;
 
     return 0;
 }

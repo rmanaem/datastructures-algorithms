@@ -20,13 +20,13 @@ int combination(int n, int r)
     return num / den;
 }
 
-int combination_pascal(int n, int r)
+int combinationPascal(int n, int r)
 {
     if (r == 0 || n == r)
     {
         return 1;
     }
-    return combination_pascal(n - 1, r - 1) + combination_pascal(n - 1, r);
+    return combinationPascal(n - 1, r - 1) + combinationPascal(n - 1, r);
 }
 
 int main()
@@ -34,7 +34,7 @@ int main()
     int x = 4, y = 3;
 
     std::cout << combination(x, y) << std::endl;
-    std::cout << combination_pascal(x, y) << std::endl;
+    std::cout << combinationPascal(x, y) << std::endl;
 
     return 0;
 }
